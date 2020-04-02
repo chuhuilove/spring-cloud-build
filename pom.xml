@@ -194,24 +194,24 @@
 			</resource>
 		</resources>
 		<plugins>
-			<plugin>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>${maven-javadoc-plugin.version}</version>
-				<executions>
-					<execution>
-						<id>javadoc</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-				</executions>
-				<configuration>
-					<!-- TODO: We need to patch the javadocs instead of disabling this -->
-					<failOnError>false</failOnError>
-					<quiet>true</quiet>
-				</configuration>
-			</plugin>
+<!--			<plugin>-->
+<!--				<artifactId>maven-javadoc-plugin</artifactId>-->
+<!--				<version>${maven-javadoc-plugin.version}</version>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>javadoc</id>-->
+<!--						<goals>-->
+<!--							<goal>jar</goal>-->
+<!--						</goals>-->
+<!--						<phase>package</phase>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--				<configuration>-->
+<!--					&lt;!&ndash; TODO: We need to patch the javadocs instead of disabling this &ndash;&gt;-->
+<!--					<failOnError>false</failOnError>-->
+<!--					<quiet>true</quiet>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
 				<version>${maven-source-plugin.version}</version>
@@ -704,12 +704,12 @@
 			</activation>
 			<build>
 				<plugins>
-					<plugin>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<configuration>
-							<additionalparam>-Xdoclint:none</additionalparam>
-						</configuration>
-					</plugin>
+<!--					<plugin>-->
+<!--						<artifactId>maven-javadoc-plugin</artifactId>-->
+<!--						<configuration>-->
+<!--							<additionalparam>-Xdoclint:none</additionalparam>-->
+<!--						</configuration>-->
+<!--					</plugin>-->
 				</plugins>
 			</build>
 		</profile>
